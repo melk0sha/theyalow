@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background: url(assets/images/bg-1.png) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%;
+}
+
+.logo:first-of-type {
+    transform: rotate(45deg);
+}
+/* 
+.logo:nth-of-type(2) {
+} */
+
+li {
+    background: #f5c506;
+    border-left: 1px solid #dcb105;
+}
+
+li:first-of-type {
+    border-left: none;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
