@@ -22,27 +22,28 @@ header {
     justify-content: center;
 }
 
-.logo {
+.company-label > .logo {
     height: 80px;
 }
 
 .company-label {
     display: flex;
-    margin: 28px 200px 0 0;
     align-items: center;
+    color: #ffffff;
+    margin: 28px 200px 0 0;
 }
 
-li {
+nav > ul > li {
     padding: 8px 13px;
     border-left: 1px solid #dcb105; 
 }
 
-li:first-of-type {
+nav > ul > li:first-of-type {
     border-left: none;
     padding-left: 35px;
 }
 
-ul {
+nav > ul {
     display: flex;
     align-items: center;
     margin-top: 63px;
@@ -94,22 +95,88 @@ video {
     margin-right: 300px;
 }
 
-.lorem {
+.lorem-orange {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 507px;
-    background: url(assets/images/bg-lorem.png);
+    background: url(assets/images/bg-lorem-orange.png);
     box-shadow: inset 0 5px 5px -5px #000000;
 }
 
-.lorem-text {
+.lorem-orange-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 232px;
     width: 341px;
     background: #ec9e03;
 }
 
 .twitter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
     height: 232px;
     width: 341px;
     background: #ec9e03;
+}
+
+.lorem-orange-cols > video {
+    height: 232px;
+}
+
+.lorem-orange-cols {
+    display: flex;
+    justify-content: center;
+}
+
+.lorem-orange > h4 {
+    margin-left: 134px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 86px;
+    width: 115px;
+    margin-left: 134px;
+    background: #ddb101;
+}
+
+.lorem-grey {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 497px;
+    background: url(assets/images/bg-lorem-grey.png);
+}
+
+.gadgets-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: url(assets/images/circle.png);
+}
+
+.gadgets-title > ul {
+    margin-left: 50px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background: #4c4c4c;
+    box-shadow: 0 -5px 5px -5px #000000;
+}
+
+footer > .logo {
+    height: 54px;
+    margin-left: 149px;
 }
