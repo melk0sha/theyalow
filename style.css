@@ -23,45 +23,86 @@ header {
 }
 
 .company-label > .logo {
-    height: 80px;
+    height: 86px;
 }
 
 .company-label {
     display: flex;
     align-items: center;
+    font-family: 'Lucida Sans';
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: 1px;
     color: #ffffff;
-    margin: 28px 200px 0 0;
+    margin: 27px 258px 0 0;
+}
+
+.company-label > h1 {
+    padding: 10px 0 0 1px;
 }
 
 nav > ul > li {
-    padding: 8px 13px;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe WP';
+    color: #9b7d08;
+    font-size: 17px;
+    padding: 9px 18px;
     border-left: 1px solid #dcb105; 
 }
 
 nav > ul > li:first-of-type {
     border-left: none;
-    padding-left: 35px;
+    padding-left: 40px;
+}
+
+nav span {
+    margin-left: 9px;
 }
 
 nav > ul {
     display: flex;
-    align-items: center;
-    margin-top: 63px;
+    margin: 71px 0 0 0;
     white-space: pre;
     background: #f5c506;
-    box-shadow: -5px -5px #f5c50675, -10px -10px #f5c50675;
+    box-shadow: -4px -4px #f5c50649, -8px -8px #f5c50649;
 }
 
 .slider {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 0 0;
+    margin: 55px 0 -10px;
+}
+
+.slider > video {
+    height: 327px;
+    margin-left: 70px;
+}
+
+.slide-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Asap';
+    letter-spacing: 1px;
+    margin: 0 77px 30px 0;
+}
+
+.slide-title > h2:first-of-type {
+    color: #f5c506;
+    margin-right: 17px;
+}
+
+.slide-title > h2 {
+    color: #ffffff;
+    font-size: 62px;
 }
 
 .arrow {
     height: 57px;
     width: 32px;
+    margin-bottom: 4px;
     background: #caa60e;
 }
 
@@ -73,26 +114,67 @@ nav > ul {
     padding: 18px 8px;
 }
 
-video {
-    height: 327px;
-}
-
 .columns {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    font-family: 'Segoe UI';
+    font-weight: 300;
+    font-size: 24px;
     background: url(assets/images/bg-columns.png);
     margin: 82px 0 0;
     height: 212px;
     box-shadow: 0 -5px 5px -5px #000000;
 }
 
+.columns > .border {
+    height: 100%;
+    width: 1px;
+    background: #d4d4d4;
+}
+
 .better-design {
-    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3%;
+    margin-top: 28px;
+}
+
+.better-design > img {
+    margin: 0 6px 8px 0;
+}
+
+.customize > img {
+    margin: 0 0 11px 19px;
+}
+
+.its-free > img {
+
+}
+
+.customize {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3%;
+    margin-top: 5px;
 }
 
 .its-free {
-    margin-right: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3%;
+    margin-top: 27px;
+}
+
+.columns > .border:first-of-type {
+    margin-left: 140px;
+}
+
+.columns > .border:last-of-type {
+    margin-right: 140px;
 }
 
 .lorem-orange {
@@ -132,10 +214,12 @@ video {
 .lorem-orange-cols {
     display: flex;
     justify-content: center;
+    font-family: 'Segoe WP';
 }
 
 .lorem-orange > h4 {
     margin-left: 134px;
+    font-family: "PT Sans";
 }
 
 .date {
@@ -143,6 +227,7 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Segoe UI';
     height: 86px;
     width: 115px;
     margin-left: 134px;
@@ -157,6 +242,10 @@ video {
     background: url(assets/images/bg-lorem-grey.png);
 }
 
+.lorem-grey > h4 {
+    font-family: 'PT Sans';
+}
+
 .gadgets-title {
     display: flex;
     justify-content: center;
@@ -166,11 +255,14 @@ video {
 
 .gadgets-title > ul {
     margin-left: 50px;
+    font-family: 'Open Sans';
 }
 
 footer {
     display: flex;
     align-items: center;
+    font-family: 'Lucida Sans';
+    font-style: italic;
     height: 65px;
     background: #4c4c4c;
     box-shadow: 0 -5px 5px -5px #000000;
