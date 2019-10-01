@@ -213,23 +213,11 @@ nav > ul {
 }
 
 .lorem-orange > h4 {
-    margin: 55px 0 0 140px;
+    margin: 9px 0 0 140px;
     letter-spacing: 0.5px;
     font-family: 'PT Sans';
     font-size: 37px;
     text-transform: uppercase;
-}
-
-.lorem-orange-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 232px;
-    width: 341px;
-    padding: 30px 30px 0 30px;
-    letter-spacing: 0.3px;
-    background: #ec9e03;
 }
 
 .lorem-orange-cols {
@@ -240,8 +228,19 @@ nav > ul {
     margin-top: 32px;
 }
 
+.lorem-orange-text {
+    position: relative;
+    height: 232px;
+    width: 341px;
+    padding: 17px 0 0 30px;
+    letter-spacing: 0.3px;
+    background: #ec9e03;
+}
+    
 .lorem-orange-text .plus {
-    margin: 0 0 20px 303px;
+    position: absolute;
+    right: 12px;
+    bottom: 4px;
 }
 
 .plus {
@@ -256,28 +255,28 @@ nav > ul {
     cursor: pointer;
 }
 
-.twitter .plus {
-    margin: 20px 0 0 295px;
-}
-
 .twitter {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 35px;
+    align-items: flex-end;
+    margin-left: 33px;
     height: 232px;
     width: 330px;
     background: #ec9e03;
 }
-
+    
 .twitter > .number {
-    margin: 0 0 0 264px;
+    margin: 11px 18px 0 0;
     font-size: 26px;
 }
-
+    
 .twitter > img {
-    margin-top: 5px;
+    align-self: center;
+    margin-top: 13px;
+}
+
+.twitter .plus {
+    margin: 8px 10px 0 0;
 }
 
 .lorem-orange-cols > video {
@@ -287,31 +286,33 @@ nav > ul {
 .date {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI';
     height: 86px;
-    width: 115px;
-    margin-left: 134px;
+    width: 113px;
     background: #ddb101;
-    margin: 0 0 50px 139px;
+    margin: 0 0 0 140px;
 }
 
 .date > span:first-of-type {
+    height: 50px;
     font-size: 50px;
+    font-family: 'Segoe UI Bold';
+    margin-left: 4px;
 }
 
 .date > span:last-of-type {
-    font-size: 20px;
+    font-family: 'Segoe UI';
+    font-size: 22px;
     text-transform: uppercase;
-    margin-top: -15px;
-    padding-bottom: 5px;
+    margin-top: 4px;
+    margin-left: 4px;
+    color: #ba7321;
 }
 
 .range-slider {
     width: 896px;
     height: 16px;
-    margin: 0 0 45px 212px;
+    margin: 43px 0 0 212px;
 }
 
 input[type='range'] {
@@ -381,15 +382,30 @@ input[type="range"]::-ms-fill-upper {
 
 .gadgets-title > ul {
     font-family: 'Open Sans';
+    letter-spacing: 0.2px;
     font-size: 22px;
-    color: #ffffff;
-    margin: 0 -67px -80px 0;
+    color: #929290;
+    margin: 0 -67px -82px 0;
 }
 
 .gadgets-title > ul > li {
     padding-left: 12px;
-    margin-top: 15px;
+    margin-top: 10px;
     width: 400px;
+}
+
+.gadgets-title > ul > li:nth-of-type(2) {
+    margin-top: 22px;
+    line-height: 26px;
+}
+
+.gadgets-title > ul > li:nth-of-type(3) {
+    margin-top: 10px;
+}
+
+.gadgets-title > ul > li:nth-of-type(4) {
+    margin-top: 24px;
+    line-height: 26px;
 }
 
 footer {
