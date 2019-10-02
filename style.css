@@ -81,9 +81,13 @@ nav > ul {
     margin: 55px 0 -10px;
 }
 
-.slider > video {
+.slider > .video-desktop {
     height: 327px;
     margin-left: 70px;
+}
+
+.video-mobile {
+    display: none;
 }
 
 .slide-title {
@@ -461,6 +465,7 @@ footer > .logo {
         font-size: 19px;
         margin: 0 10px 7px 5px;;
         letter-spacing: 0.7px;
+        text-shadow: 2px 2px #303030;
     }
 
     nav > ul {
@@ -509,10 +514,14 @@ footer > .logo {
         display: none;
     }
 
-    .slider > video {
+    .slider > .video-mobile {
+        display: initial;
         margin: 0;
-
         width: 640px;
+    }
+
+    .video-desktop {
+        display: none;
     }
     
     .slider {
@@ -664,5 +673,6 @@ footer > .logo {
         font-size: 14px;
         margin-left: 10px;
         letter-spacing: 2px;
+        text-shadow: 2px 2px #303030;
     }
 }
