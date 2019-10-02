@@ -255,6 +255,10 @@ nav > ul {
     cursor: pointer;
 }
 
+.twitter-mobile {
+    display: none;
+}
+
 .twitter {
     display: flex;
     flex-direction: column;
@@ -428,4 +432,237 @@ footer > h2 {
 footer > .logo {
     height: 54px;
     margin-left: 140px;
+}
+
+@media screen and (max-width: 640px) {
+    .wrapper {
+        max-width: 640px;
+        background: none;
+    }
+
+    header {
+        height: 62px;
+        margin: 0;
+    }
+
+    .company-label {
+        justify-content: center;
+        width: 186px;
+        height: 62px;
+        margin: 0;
+        background: linear-gradient(0deg, #3d3d3d, #575757);
+    }
+
+    .company-label > .logo {
+        height: 40px;
+    }
+    
+    .company-label > h1 {
+        font-size: 19px;
+        margin: 0 10px 7px 5px;;
+        letter-spacing: 0.7px;
+    }
+
+    nav > ul {
+        margin: 0;
+        height: 62px;
+        width: 454px;
+        box-shadow: none;
+    }
+
+    nav > ul img {
+        height: 23px;
+    }
+
+    nav > ul li {
+        font-size: 18px;
+    }
+    
+    nav > ul > li:first-of-type {
+        padding: 0 22px 0 20px;
+    }
+
+    nav > ul > li:nth-of-type(2) {
+        padding: 0 10px 0 7px;
+    }
+    nav > ul > li:nth-of-type(3) {
+        padding: 0 20px 2px 12px;
+    }
+
+    nav > ul a {
+        letter-spacing: 1px;
+    }
+
+    nav > ul li:first-of-type a {
+        margin-left: 12px;
+    }
+
+    nav > ul li:nth-of-type(2) a {
+        margin-left: 6px;
+    }
+
+    nav > ul li:nth-of-type(3) a {
+        margin: 2px 0 0 11px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .slider > video {
+        margin: 0;
+
+        width: 640px;
+    }
+    
+    .slider {
+        margin: 0;
+    }
+
+    .slide-title {
+        display: none;
+    }
+
+    .virtues {
+        margin: 0;
+        height: 165px;
+        box-shadow: -4px -4px #ffffff49, -8px -8px #ffffff49;
+    }
+
+    .border {
+        display: none;
+    }
+    
+    .better-design > img {
+        height: 62px;
+        margin: 0 33px 15px 0;
+    }
+
+    .better-design > h3 {
+        font-size: 23px;
+        letter-spacing: 0.3px;
+        margin: 0 25px 20px 0;
+    }
+
+    .customise > img {
+        height: 70px;
+        margin: 0 0 12px 13px;
+    }
+
+    .customise > h3 {
+        font-size: 22px;
+        letter-spacing: 0.9px;
+        margin: 0 0 0 18px;
+    }
+
+    .its-free > img {
+        height: 70px;
+        margin: 0 10px 16px 0;
+    }
+
+    .its-free > h3 {
+        font-size: 22px;
+        letter-spacing: 0.9px;
+        margin: 0 0 15px 5px;
+    }
+
+    .lorem-orange {
+        height: 490px;
+        margin: -7px 0 0 0;
+        box-shadow: none;
+        background: none;
+    }
+
+    .lorem-orange > h4 {
+        display: none;
+    }
+
+    .twitter {
+        display: none;
+    }
+
+    .lorem-orange-text {
+        margin: 0 10px 10px 10px;
+        padding: 13px 10px 30px 25px;
+        line-height: 35px;
+    }
+
+    .lorem-orange-cols > video {
+        margin: 0 9px 0 0;
+    }
+
+    .date, .range-slider {
+        display: none;
+    }
+
+    .twitter-mobile {
+        display: flex;
+        justify-content: center;
+        height: 234px;
+        background: #f5c507;
+    }
+
+    .twitter-mobile > img {
+        align-self: center;
+        height: 133px;
+        margin: 14px 0 0 57px;
+    }
+    
+    .tweet {
+        margin: 5px 0 0 74px;
+    }
+
+    .tweet > ul > li > img {
+        height: 44px;
+        width: 290px;
+        margin-top: 16px;
+    }
+
+    .tweet > ul > li > p {
+        width: 230px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #8f8e8e;
+        font-size: 14px;
+        margin: -40px 0 0 33px;
+        letter-spacing: 0.009px;
+    }
+
+    .tweet > img {
+        height: 50px;
+        width: 280px;
+        margin: 10px 0 0 18px;
+    }
+
+    .gadgets-title > ul {
+        display: none;
+    }
+
+    .lorem-grey > h4 {
+        margin: 40px 10px 0 0;
+        font-size: 38px;
+        letter-spacing: 2.5px;
+    }
+
+    .lorem-grey {
+        height: 472px;
+    }
+
+    .gadgets-title > img {
+        margin: 30px 0 0 10px;
+    }
+
+    footer {
+        height: 44px;
+    }
+
+    footer > .logo { 
+        height: 30px;
+        margin-left: 65px;
+    }
+
+    footer > h2 {
+        font-size: 14px;
+        margin-left: 10px;
+        letter-spacing: 2px;
+    }
 }
