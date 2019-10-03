@@ -241,6 +241,10 @@ nav > ul {
     background: #ec9e03;
 }
     
+.lorem-orange-text > .text-mobile {
+    display: none;
+}
+
 .lorem-orange-text .plus {
     position: absolute;
     right: 12px;
@@ -515,9 +519,10 @@ footer > .logo {
     }
 
     .slider > .video-mobile {
-        display: initial;
+        display: unset;
         margin: 0;
         width: 640px;
+        z-index: 1;
     }
 
     .video-desktop {
@@ -533,7 +538,8 @@ footer > .logo {
     }
 
     .virtues {
-        margin: 0;
+        z-index: 2;
+        margin: -19px 0 0 0;
         height: 165px;
         box-shadow: -4px -4px #ffffff49, -8px -8px #ffffff49;
     }
@@ -550,7 +556,7 @@ footer > .logo {
     .better-design > h3 {
         font-size: 23px;
         letter-spacing: 0.3px;
-        margin: 0 25px 20px 0;
+        margin: 0 23px 20px 0;
     }
 
     .customise > img {
@@ -592,8 +598,16 @@ footer > .logo {
 
     .lorem-orange-text {
         margin: 0 10px 10px 10px;
-        padding: 13px 10px 30px 25px;
-        line-height: 35px;
+        padding: 13px 20px 30px 25px;
+        line-height: 34px;
+    }
+
+    .lorem-orange-text > .text-desktop {
+        display: none;
+    }
+
+    .lorem-orange-text > .text-mobile {
+        display: unset;
     }
 
     .lorem-orange-cols > video {
@@ -636,10 +650,38 @@ footer > .logo {
         letter-spacing: 0.009px;
     }
 
-    .tweet > img {
+    .tweet input {
+        height: 30px;
+        outline: none;
+        -webkit-appearance: none;
+    }
+
+    .tweet input[type="text"] {
+        border-radius: 10px 0 0 10px;
+        border: 1px solid #d0a706;
+        border-right: none;
+        width: 200px;
+        box-shadow: 5px 5px 5px #e7e7e7 inset;
+
+    }
+
+    .tweet input[type="submit"] {
+        border: 1px solid #d0a706;
+        border-radius: 0 10px 10px 0;
+        border-left: none;
+        width: 70px;
+        background: linear-gradient(0deg, #cf8e0b, #eaa927);
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.3px;
+        font-size: 15px;
+    }
+
+    .tweet > form {
+        display: flex;
         height: 50px;
         width: 280px;
-        margin: 10px 0 0 18px;
+        margin: 19px 0 0 18px;
     }
 
     .gadgets-title > ul {
@@ -653,11 +695,11 @@ footer > .logo {
     }
 
     .lorem-grey {
-        height: 472px;
+        height: 473px;
     }
 
     .gadgets-title > img {
-        margin: 30px 0 0 10px;
+        margin: 30px 0 0 23px;
     }
 
     footer {
